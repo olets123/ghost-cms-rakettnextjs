@@ -1,0 +1,350 @@
+.frontpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  height: 100vh;
+  z-index: 1;
+  //background: url("../public/assets/image1.JPG");
+}
+
+.frontImage {
+  position: fixed;
+  top: 10rem;
+  padding: 60px;
+  height: 100vh;
+  display: flex;
+  justify-items: center;
+  z-index: -1;
+  -webkit-animation: fade-in-bck 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bck 1.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fade-in-bck {
+  0% {
+    transform: translateZ(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.text {
+  text-align: center;
+}
+
+.text > h1 {
+  position: relative;
+  top: 1rem;
+  text-align: center;
+  font-size: 16rem;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+  color: white;
+  -webkit-text-stroke: 4px black;
+}
+
+.text > h1 > strong {
+  color: #f01e82;
+  -webkit-text-stroke: 0px rgb(255, 255, 255);
+}
+
+.text > p {
+  position: relative;
+  top: 10%;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1166px;
+  text-align: center;
+  margin: 4px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding-top: 4px;
+  padding-bottom: 20px;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 20px;
+  max-width: 850px;
+  border-top: 1px solid black;
+
+  //grid-template-columns: 400px 400px;
+}
+
+.team > h1 {
+  font-size: 6rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  -webkit-text-stroke: 4px rgb(0, 0, 0);
+  justify-items: center;
+}
+
+.team > h1 > strong {
+  color: #f01e82;
+  -webkit-text-stroke: 0px rgb(0, 0, 0);
+}
+
+.box2 {
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-bottom: 10rem;
+  padding-top: 20px;
+  max-width: 100%;
+  //border-bottom: 1px solid black;
+}
+
+.member {
+  position: relative;
+  top: 2rem;
+  object-fit: contain;
+  background-color: rgb(255, 255, 255);
+  height: 650px;
+  width: 400px;
+  margin: 10px;
+  padding: 0px;
+  border: 4px solid rgb(236, 236, 236);
+}
+
+.member > h1 {
+  color: #f01e82;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-left: 10px;
+  font-weight: 400;
+}
+
+.member > p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-weight: 200;
+}
+
+.member > p > a {
+  color: #006af5;
+  font-weight: 600;
+  margin-left: -4px;
+  position: relative;
+  top: -22px;
+}
+
+.member > p > svg {
+  font-size: 45px;
+  color: #f01e82;
+  padding-bottom: 10px;
+}
+
+.TeamImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  padding-bottom: 40rem;
+  max-width: 900px;
+}
+
+.TeamImage > h1 {
+  font-size: 4rem;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  color: #f01e82;
+  //-webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.TeamImage > p {
+  color: rgb(0, 0, 0);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  text-align: center;
+  margin: 0px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding-top: px;
+  padding-bottom: 20px;
+  position: relative;
+  top: -1rem;
+  height: 50px;
+  border: 2px solid rgb(235, 235, 235);
+  background-color: white;
+}
+
+.bottomImage {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .frontpage {
+    margin-top: 4rem;
+    padding: 0;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    background-position: 80% 70%;
+    //background-attachment: fixed;
+    background-size: 370px auto;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .frontImage {
+    position: relative;
+    top: 12rem;
+    padding: 60px;
+    width: 100% !important;
+    height: 50vh !important;
+    display: flex;
+    justify-items: center;
+    z-index: 1;
+    background: white;
+  }
+  .text > h1 {
+    font-size: 4rem !important;
+    margin: 10px;
+    padding: 10px;
+    position: relative !important;
+    top: -20rem !important;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+
+  .team > h1 {
+    font-size: 4rem;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+  }
+
+  .text > p {
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 350px;
+    text-align: center;
+    margin: 4px;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5;
+    padding-top: 4px;
+    padding-bottom: 0px;
+  }
+  .member {
+    position: relative;
+    top: 2rem;
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+    height: 560px;
+    width: 350px;
+    margin: 10px;
+    padding: 0px;
+    border: 4px solid rgb(236, 236, 236);
+  }
+  .member > h1 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+  .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 350px;
+    border-top: 1px solid black;
+
+    //grid-template-columns: 400px 400px;
+  }
+  .box2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 350px;
+    //border-bottom: 1px solid black;
+  }
+  .TeamImage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 370px;
+  }
+
+  .TeamImage > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  .TeamImage > p {
+    height: 110px !important;
+    margin: 0;
+    padding: 10px;
+    max-width: 100%;
+  }
+  .bottomImage {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    padding-bottom: 10rem;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .text > h1 {
+    font-size: 8rem;
+    position: relative;
+    top: 5rem;
+  }
+  .frontImage {
+    width: 1000px;
+    height: 800px;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .TeamImage {
+    width: 90%;
+    display: flex;
+    align-items: center;
+  }
+  .TeamImage > p {
+    height: 80px;
+  }
+}

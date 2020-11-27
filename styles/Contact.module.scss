@@ -1,0 +1,116 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text > h1 > strong {
+  text-align: center;
+  font-size: 10rem;
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding-bottom: 0px;
+  color: #f01e82;
+  font-weight: 800;
+  //-webkit-text-stroke: 4px rgb(0, 0, 0);
+}
+
+.text > h1 > small {
+  font-size: 8rem;
+  -webkit-text-stroke: 4px rgb(0, 0, 0);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.text > p {
+  max-width: 600px;
+  text-align: center;
+  margin: 4px;
+  font-size: 1.2rem;
+  font-weight: 200;
+  line-height: 1.5;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socialContact {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 4px;
+}
+
+.socialContact > p {
+  display: flex;
+  margin-left: 2px;
+  margin-right: 20px;
+  padding: 0px;
+  position: relative;
+  top: -1px;
+}
+
+.socialContact > svg {
+  margin: 0px;
+  padding: 2px;
+  font-size: 40px;
+}
+
+.form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btnSubmit {
+  color: #f01e82;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    margin-top: 4rem;
+  }
+
+  .text > h1 > strong {
+    text-align: center;
+    font-size: 4rem;
+
+    //-webkit-text-stroke: 4px rgb(0, 0, 0);
+  }
+
+  .socialContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+
+  .socialContact > p {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+
+  .text > h1 > small {
+    font-size: 4rem;
+  }
+}
