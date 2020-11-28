@@ -479,13 +479,14 @@
   .homeFront > h1 {
     position: relative;
     top: 10rem;
-    font-size: 4rem;
+    font-size: 3rem !important;
     word-wrap: break-word;
-    width: 100%;
+    width: 350px;
   }
 
   .homeFront > h1 > small {
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
 
   .homeFront > p {
