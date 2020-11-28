@@ -477,9 +477,10 @@
   }
 
   .homeFront > h1 > strong {
-    color: #f01e82;
+    color: #000000;
     font-weight: 800;
     font-size: 3.2rem;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
   }
 
   .homeFront > h1 {
@@ -493,7 +494,7 @@
   }
 
   .homeFront > h1 > small {
-    color: black;
+    color: #f01e82 !important;
     -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
 
