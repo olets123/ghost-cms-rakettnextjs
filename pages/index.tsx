@@ -46,7 +46,7 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
 			<div className={styles.homeFront}>
 				
 				<h1><strong>Rakettåsen</strong> <small>Skilinje</small></h1>
-				<p>Rakettåsen Skilinje består fem skiløpere fra Gjøvik og Toten i kledd rosa kondomdresser.
+				<p>Rakettåsen Skilinje består fem skiløpere fra Gjøvik og Toten kledd i rosa kondomdresser.
 					Følg oss daglig på <a href="https://www.instagram.com/rakettaasen_skilinje/">@rakettaasen_skilinje</a>.
 					 </p> 
 					

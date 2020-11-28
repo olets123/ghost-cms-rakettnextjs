@@ -82,7 +82,10 @@
 }
 
 .btnSubmit {
+  font-size: 1.2rem;
   color: #f01e82;
+  padding: 40px;
+  width: 30%;
 }
 
 @media (max-width: 600px) {
@@ -95,6 +98,11 @@
     font-size: 4rem;
 
     //-webkit-text-stroke: 4px rgb(0, 0, 0);
+  }
+
+  .text h1 > small {
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
 
   .socialContact {
@@ -112,5 +120,10 @@
 
   .text > h1 > small {
     font-size: 4rem;
+  }
+  .btnSubmit {
+    padding: 40px;
+    width: 100%;
+    height: 80px;
   }
 }

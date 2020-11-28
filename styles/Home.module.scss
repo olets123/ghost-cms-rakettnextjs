@@ -1,6 +1,6 @@
 .homeFront {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 
@@ -169,6 +169,7 @@
 .navbar {
   height: 60px;
   display: flex;
+  flex-direction: row;
   width: 100%;
   padding: 10px;
   margin: 10px;
@@ -196,25 +197,23 @@
   cursor: pointer;
 }
 
-.navLeft > a {
-  text-align: left;
-  margin-right: 50px;
-}
-
 .navLeft {
+  display: flex;
   font-size: 1.6rem;
   margin-top: 2px;
-
-  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 .navRight {
-  position: relative;
   margin-top: 4px;
-  left: 50%;
-  justify-content: space-between;
-  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  width: 600px;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .navRight > button > a {
@@ -281,17 +280,13 @@
 }
 
 .navRight > a {
-  margin-left: 10px;
-  padding-right: 10px;
+  margin-left: 1px;
+  padding-right: 1px;
 }
 
 .navRight > a:hover {
   color: black;
   transition: 0.3s;
-}
-
-.navRight > li {
-  margin-right: 10px;
 }
 
 .mobileMenu {
@@ -323,7 +318,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -450,10 +445,23 @@
   -webkit-text-stroke: 4px #000000;
 }
 
+@media (max-width: 330px) {
+  .navLeft {
+    font-size: 1rem !important;
+  }
+  .homeFront > h1 {
+    font-size: 2.2rem !important;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  .logo {
+    width: 120px;
   }
 
   .Future > h1 {
@@ -503,6 +511,7 @@
 
   .navLeft {
     font-size: 1.4rem;
+    width: 100%;
   }
 
   .navRight {
@@ -529,7 +538,8 @@
     margin-top: 10rem;
     font-size: 3rem;
     width: 350px;
-    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
   .postItem {
     display: flex;
@@ -551,7 +561,7 @@
     color: white;
     //border: 1px solid black;
     border-radius: 15px;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     width: 120px;
     display: flex;
@@ -591,6 +601,13 @@
   }
 }
 @media (max-width: 1066px) {
+  .homeFront > h1 {
+    font-size: 4rem;
+  }
+  .homeFront > h1 > small {
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
+  }
   .navRight {
     display: none;
   }
@@ -598,7 +615,16 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 40%;
+    left: 0%;
+  }
+  .container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .postButton {
+    position: relative;
+    top: 5px;
   }
 }
 /*

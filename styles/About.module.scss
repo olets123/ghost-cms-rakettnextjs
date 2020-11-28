@@ -200,7 +200,8 @@
   }
   .text > h1 > small {
     font-size: 4rem;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
   .storytext > h1 {
     text-align: center;
@@ -243,14 +244,16 @@
   }
   .text > h1 > small {
     font-size: 4rem;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
   .storytext > h1 {
     text-align: center;
     font-size: 3rem;
   }
   .storytext > h1 > strong {
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: black;
+    -webkit-text-stroke: 0px rgb(0, 0, 0);
   }
   .galleryBox {
     display: none;
