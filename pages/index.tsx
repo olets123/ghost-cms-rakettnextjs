@@ -98,7 +98,7 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
 		</div>
 
 		<div className={styles.bottomImage}>
-           <Image src="/../public/assets/Rakettaasen_Square_RGB.png" width={400} height={400} />
+           <Image src="/assets/Rakettaasen_Square_RGB.png" width={400} height={400} />
 		   <p>Rakettåsen Skilinje - 2020</p>
            </div>
 
