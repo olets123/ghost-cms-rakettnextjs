@@ -59,7 +59,7 @@ const Team = () => {
                 <Image src="/assets/amu.JPG" width={400} height={400} />
                 <h1>Amund Dalseg</h1>
                 <p>Født: 30.11.1996</p>
-                <p>Tidligere klubber:Vind IL</p>
+                <p>Tidligere klubber: Vind IL</p>
                 <p>Yrke: Selger</p>                
                 <p><InstagramIcon /> <a href="https://www.instagram.com/amunddalseg/">@amunddalseg</a></p>
             </div>
