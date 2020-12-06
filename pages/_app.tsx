@@ -1,4 +1,5 @@
 import '../styles/globals.scss'
+import styles from '../styles/Home.module.scss'
 import Layout from '../components/Layout'
 import { AppProps } from 'next/app'
 import { Flipper, Flipped } from 'react-flip-toolkit'

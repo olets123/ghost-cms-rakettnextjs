@@ -71,8 +71,8 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
 			<ul>
 				{posts.map((post, index) => {
 					return (
-						<li className={styles.postItem} key={post.slug}>
-							<li className={styles.postLeft}>
+						<div className={styles.postItem} key={post.slug}>
+							<div className={styles.postLeft}>
 							<h1>{post.title}</h1>
           					<p key={index} className={styles.postExcerpt}>
 								  {post.custom_excerpt}
@@ -81,14 +81,16 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
 							<Link href="/post/[slug]" as={`/post/${post.slug}`}>
 								<a className={styles.postButton}>Les Mer</a>
 							</Link>
-							  </li>
-							  <li className={styles.postRight}>
+							  </div>
+					
+							  <div className={styles.postRight}>
 								  <img 
 								 className={styles.postImg} 
 						  		src={post.feature_image} 
 						 		alt="blog-image"/>
-						</li>
-						</li>
+								 
+						</div>
+						</div>
 					)
 				})}
 			</ul>
